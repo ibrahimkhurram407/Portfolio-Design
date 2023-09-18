@@ -258,6 +258,11 @@ margin-bottom: 5rem;
     width: 100%;
 }
 
+portfolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+
 .portfolio-box, .portfolio-layer {
     /* position: absolute; */
     bottom: 0;
@@ -271,4 +276,122 @@ margin-bottom: 5rem;
     flex-direction: column;
     text-align: center;
     padding: 0 4rem;
+    transform: translateY(100%);
 }
+
+.portfolio-box:hover, .portfolio-layer:hover {
+    transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+    font-size: 3rem;
+}
+
+.portfolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+
+/* ai fixes */
+/* Define the initial button styles */
+.portfolio {
+    background: var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    padding: 4rem 0; /* Add padding for better spacing */
+  }
+  
+  .portfolio h2 {
+    margin-bottom: 4rem;
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    justify-items: center; /* Center the grid items horizontally */
+  }
+  
+  .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    width: 100%; /* Ensure the boxes take up the full width of the column */
+    transition: transform 0.3s ease-in-out; /* Adjust the transition for a smoother effect */
+  }
+  
+  .portfolio-box img {
+    width: 100%;
+  }
+  
+  .portfolio-box:hover {
+    transform: scale(1.05); /* Scale the box on hover */
+  }
+  
+  .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0; /* Change the height to 0 initially */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem; /* Adjust the padding for better alignment */
+    transition: height 0.3s ease-in-out; /* Add transition for smooth height change */
+  }
+  
+  .portfolio-box:hover .portfolio-layer {
+    height: 100%; /* Expand the layer on hover */
+  }
+  
+  .portfolio-layer h4 {
+    font-size: 2rem; /* Adjust font size for better fit */
+    color: #fff; /* Change text color to white */
+    margin-bottom: 1rem; /* Add space below the title */
+  }
+  
+  .portfolio-layer p {
+    font-size: 1.4rem; /* Adjust font size for better readability */
+    color: #fff; /* Change text color to white */
+    margin: 0; /* Remove default margins */
+  }
+  
+  .portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem; /* Adjust the icon size */
+    height: 3rem; /* Adjust the icon size */
+    background: var(--text-color);
+    border-radius: 50%;
+    margin-top: 1rem; /* Add space above the link */
+  }
+  
+  .portfolio-layer a i {
+    font-size: 1.5rem; /* Adjust icon size */
+    color: var(--second-bg-color); /* Change icon color */
+  }
+  
