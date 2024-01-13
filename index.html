@@ -23,24 +23,24 @@
 
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
-      <a href="#home">About</a>
-      <a href="#home">Services</a>
-      <a href="#home">Portfolio</a>
-      <a href="#home">Contact</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
   <!-- home section design -->
-  <section>
+  <section class="home" id="home">
     <div class="home-content">
       <h3>Hello, It's Me</h3>
       <h1>Ibrahim Khurram</h1>
-      <h3>And I'm a <span>Frontend Developer</span></h3>
+      <h3>And I'm a <span class="multiple-text"></span></h3>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, quibusdam.</p>
       <div class="social-media">
-        <a href="#"><i class='bx bxl-facebook bx-tada-hover' style='color:#00eeff' ></i></a>
-        <a href="#"><i class='bx bxl-github bx-tada-hover' style='color:#00eeff' ></i></a>
-        <a href="#"><i class='bx bxl-instagram bx-tada-hover' style='color:#00eeff' ></i></a>
-        <a href="#"><i class='bx bxl-linkedin bx-tada-hover' style='color:#00eeff' ></i></box-icon></a>
+        <a href="#"><i class='bx bxl-facebook bx-tada-hover' style='color:#00eeff'></i></a>
+        <a href="#"><i class='bx bxl-github bx-tada-hover' style='color:#00eeff'></i></a>
+        <a href="#"><i class='bx bxl-instagram bx-tada-hover' style='color:#00eeff'></i></a>
+        <a href="#"><i class='bx bxl-linkedin bx-tada-hover' style='color:#00eeff'></i></box-icon></a>
       </div>
       <a href="./CV.pdf" class="btn">Download CV</a>
     </div>
@@ -66,62 +66,38 @@
   </section>
 
   <!-- services section design -->
-<section class="services" id="services">
-  <h2 class="heading">Our <span>Services</span></h2>
-  <div class="services-container">
-    <div class="services-box">
-      <i class="bx bx-code-alt"></i>
-      <h3>Web Development</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto similique possimus placeat eius pariatur qui numquam voluptatem sint eaque?</p>
-      <a href="#" class="btn">Read More</a>
-    </div>
+  <section class="services" id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <div class="services-container">
+      <div class="services-box">
+        <i class="bx bx-code-alt"></i>
+        <h3>Web Development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto similique possimus placeat eius pariatur
+          qui numquam voluptatem sint eaque?</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
 
-    <div class="services-box">
-      <i class='bx bxs-paint' ></i>
-      <h3>Graphic Designer</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto similique possimus placeat eius pariatur qui numquam voluptatem sint eaque?</p>
-      <a href="#" class="btn">Read More</a>
-    </div>
-  
-    <div class="services-box">
-      <i class='bx bx-bar-chart-alt'></i>
-      <h3>Digital Marketing</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto similique possimus placeat eius pariatur qui numquam voluptatem sint eaque?</p>
-      <a href="#" class="btn">Read More</a>
-    </div>
-  </div>
-</section>
+      <div class="services-box">
+        <i class='bx bxs-paint'></i>
+        <h3>Graphic Designer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto similique possimus placeat eius pariatur
+          qui numquam voluptatem sint eaque?</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
 
-<!-- <section class="services" id="services">
-  <h2 class="heading">Our <span>Services</span></h2>
-  <div class="services-container">
-    <div class="bx bx-code-alt">
-      <h3>Web Development</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ratione doloribus nemo quas vero beatae, alias reiciendis labore non architecto?</p>
-      <a href="#" class="btn" id="">Read More</a>
+      <div class="services-box">
+        <i class='bx bx-bar-chart-alt'></i>
+        <h3>Digital Marketing</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto similique possimus placeat eius pariatur
+          qui numquam voluptatem sint eaque?</p>
+        <a href="#" class="btn">Read More</a>
+      </div>
     </div>
-  </div>
-  <div class="services-container">
-    
-    <box-icon name='paint' type='solid' ></box-icon>
-      <h3>Graphic Design</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ratione doloribus nemo quas vero beatae, alias reiciendis labore non architecto?</p>
-      <a href="#" class="btn" id="">Read More</a>
-    
-  </div>
-  <div class="services-container">
-    
-    <box-icon name='bar-chart-alt' ></box-icon>
-      <h3>Digital Marketing</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ratione doloribus nemo quas vero beatae, alias reiciendis labore non architecto?</p>
-      <a href="#" class="btn" id="">Read More</a>
-    
-  </div>
-</section> -->
+  </section>
 
   <!-- portfolio section design -->
   <section class="portfolio" id="portfolio">
-    <h2 class="heading">Latest<span>Project</span></h2>
+    <h2 class="heading">Latest <span>Project</span></h2>
 
     <div class="portfolio-container">
 
@@ -129,7 +105,8 @@
         <img src="images/portfolio1.jpg" alt="">
         <div class="portfolio-layer">
           <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam commodi reiciendis placeat expedita cupiditate aut officia totam a exercitationem!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam commodi reiciendis placeat expedita
+            cupiditate aut officia totam a exercitationem!</p>
           <a href="#"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
@@ -138,7 +115,8 @@
         <img src="images/portfolio2.jpg" alt="">
         <div class="portfolio-layer">
           <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam commodi reiciendis placeat expedita cupiditate aut officia totam a exercitationem!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam commodi reiciendis placeat expedita
+            cupiditate aut officia totam a exercitationem!</p>
           <a href="#"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
@@ -147,7 +125,8 @@
         <img src="images/portfolio3.jpg" alt="">
         <div class="portfolio-layer">
           <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam commodi reiciendis placeat expedita cupiditate aut officia totam a exercitationem!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam commodi reiciendis placeat expedita
+            cupiditate aut officia totam a exercitationem!</p>
           <a href="#"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
@@ -156,7 +135,8 @@
         <img src="images/portfolio4.jpg" alt="">
         <div class="portfolio-layer">
           <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam commodi reiciendis placeat expedita cupiditate aut officia totam a exercitationem!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam commodi reiciendis placeat expedita
+            cupiditate aut officia totam a exercitationem!</p>
           <a href="#"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
@@ -165,7 +145,8 @@
         <img src="images/portfolio5.jpg" alt="">
         <div class="portfolio-layer">
           <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam commodi reiciendis placeat expedita cupiditate aut officia totam a exercitationem!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam commodi reiciendis placeat expedita
+            cupiditate aut officia totam a exercitationem!</p>
           <a href="#"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
@@ -174,19 +155,42 @@
         <img src="images/portfolio6.jpg" alt="">
         <div class="portfolio-layer">
           <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam commodi reiciendis placeat expedita cupiditate aut officia totam a exercitationem!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nam commodi reiciendis placeat expedita
+            cupiditate aut officia totam a exercitationem!</p>
           <a href="#"><i class='bx bx-link-external'></i></a>
         </div>
-      </div>
+      </div>`
 
     </div>
   </section>
   <!-- contact section design -->
-  
 
-<!-- footer section design -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
 
-  <!-- footer design -->
+    <form action="">
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="text" placeholder="Email Address">
+      </div>
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number">
+        <input type="number" placeholder="Email Subject">
+      </div>
+      <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+
+  <!-- footer section design -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2023 by Ibrahim K. | All Rights Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"> <i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
 
 
   <!-- scroll reveal -->
@@ -196,7 +200,9 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
   <!-- custom js -->
-  <script src="js/homepage.js"></script>
+  <script src="./js/script.js"></script>
+
+  <!-- <script src="js/homepage.js"></script> -->
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 
